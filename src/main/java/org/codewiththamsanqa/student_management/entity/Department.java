@@ -29,6 +29,10 @@ public class Department {
     @OneToMany(mappedBy = "department")
     private List<Student> students = new ArrayList<>();
 
-
+    public Department(String name, String description) {
+        this.name = name;
+        this.description = description;
     }
+
+}
 
